@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01F92BB0-0AF2-457E-8358-570FB83ED7B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project3_Client_JankiPatel</RootNamespace>
+    <AssemblyName>Project3_Client_JankiPatel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs" />
+    <Compile Include="Courses.cs" />
+    <Compile Include="Degree.cs" />
+    <Compile Include="Employment.cs" />
+    <Compile Include="Footer.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Minors.cs" />
+    <Compile Include="MinorsDetailsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinorsDetailsWindow.Designer.cs">
+      <DependentUpon>MinorsDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="News.cs" />
+    <Compile Include="NewsDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewsDetail.Designer.cs">
+      <DependentUpon>NewsDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenBrowser.Designer.cs">
+      <DependentUpon>OpenBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People.cs" />
+    <Compile Include="People_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People_details.Designer.cs">
+      <DependentUpon>People_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Research.cs" />
+    <Compile Include="ResearchDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResearchDetails.Designer.cs">
+      <DependentUpon>ResearchDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.cs" />
+    <Compile Include="ResourcesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourcesDetails.Designer.cs">
+      <DependentUpon>ResourcesDetails.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinorsDetailsWindow.resx">
+      <DependentUpon>MinorsDetailsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewsDetail.resx">
+      <DependentUpon>NewsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenBrowser.resx">
+      <DependentUpon>OpenBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People_details.resx">
+      <DependentUpon>People_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ResearchDetails.resx">
+      <DependentUpon>ResearchDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourcesDetails.resx">
+      <DependentUpon>ResourcesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ist_logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rit_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestUtil\RestUtil.csproj">
+      <Project>{a56fd72c-6a67-494b-8619-9fdf899bcfd0}</Project>
+      <Name>RestUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ist_building.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
